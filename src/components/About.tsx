@@ -3,13 +3,24 @@ import Wrapper from "./Wrapper";
 
 function About() {
   return (
-    <div className="flex flex-col justify-center">
-      <h3>Welcome to EventMania</h3>
-      <h1 className="text-green-500 font-bold text-3xl">
-        Transform your events into a thriving business or volunteer program.
-      </h1>
-      Eventbrite attracts millions of people seeking live experiences every day,
-      giving you access to the largest events marketplace in the world.
+    <div className="py-12 bg-slate-100">
+      <Wrapper className="flex flex-col items-center text-center gap-3">
+        <h3 className="text-cyan-500 font-bold text-xl sm:text-3xl">
+          The Art of Exceptional Event Planning
+        </h3>
+        <h1 className="text-green-500 font-bold text-2xl sm:text-5xl">
+          Event management turns visions into <br />
+          memorable experiences.
+        </h1>
+        <p className="text-base sm:text-lg mt-2 text-gray-700">
+          In event management, every detail matters, crafting lasting moments,
+          fostering connections, <br />
+          and creating timeless memories
+        </p>
+        <button className="mt-2 text-white transition duration-300 ease-in-out outline-none focus:outline-none hover:scale-[1.03] pt-2 pb-3 px-4 !text-md bg-gradient-to-r to-[#e494fc] from-[#72c1ec] rounded-full font-semibold">
+          Create Event
+        </button>
+      </Wrapper>
     </div>
   );
 }

@@ -34,7 +34,7 @@ function Navbar() {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.scrollY > 10) {
+      if (window.scrollY > 40) {
         setScroll(true);
       } else {
         setScroll(false);
@@ -48,12 +48,11 @@ function Navbar() {
       className={tw(
         css({
           "&.MuiAppBar-root": {
-            background: !scroll ? "rgba(0, 0, 0, 0)" : "rgba(241, 245, 249, 1)",
+            background: "#1e0a3c",
             boxShadow: scroll ? "rgba(0, 0, 0, 0.2) 0px 10px 9px" : "none",
             minHeight: "65px",
             transition: "all 0.6s ease;",
-            // top: "60px",
-            color: "black",
+            color: "white",
             overflow: "hidden",
             display: "flex",
             justifyContent: "center",
@@ -64,14 +63,14 @@ function Navbar() {
     >
       <Wrapper
         maxWidth="lg"
-        className="flex flex-row justify-between items-center text-black text-md"
+        className="flex flex-row justify-between items-center text-md"
       >
         <div className="flex flex-row items-center">
           <CelebrationIcon
-            className="text-[#ff4d70]"
+            className="text-[#50f492]"
             sx={{ fontSize: "30px" }}
           />
-          <h1 className="pt-1 fontt text-transparent bg-clip-text bg-gradient-to-r from-[#ff4a4a] to-[#b611fc] font-bold text-2xl">
+          <h1 className="pt-1 fontt text-transparent bg-clip-text bg-gradient-to-r from-[#0affa9] to-[#0aefff] font-extrabold text-2xl">
             EventMania
           </h1>
         </div>
@@ -140,9 +139,9 @@ function Navbar() {
                 {page.name}
               </p>
             ))}
-            <Typography className="py-2 px-4 !text-md bg-gradient-to-r to-[#9c0dda] from-[#fb74ae]  rounded-full text-white !ml-24">
+            <button className="ml-24 transition duration-300 ease-in-out outline-none focus:outline-none hover:scale-[1.03] pt-2 pb-3 px-4 !text-md bg-gradient-to-r to-[#e494fc] from-[#72c1ec] rounded-full text-white">
               Contact Us
-            </Typography>
+            </button>
           </Box>
         </div>
       </Wrapper>
