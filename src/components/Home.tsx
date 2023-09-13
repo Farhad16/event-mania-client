@@ -3,6 +3,7 @@ import Layout from "./layout/Layout";
 import About from "./About";
 import Banner from "./banner";
 import EventTypes from "./eventTypes";
+import Events from "./events";
 
 function Home() {
   return (
@@ -10,6 +11,7 @@ function Home() {
       <Banner />
       <About />
       <EventTypes />
+      <Events />
     </Layout>
   );
 }

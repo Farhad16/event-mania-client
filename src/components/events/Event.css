@@ -1,0 +1,16 @@
+.search-box {
+  box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.2),
+    -6px -6px 15px 0 rgba(255, 255, 255, 0.7);
+}
+
+.search-input {
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  outline: none;
+}
+
+.box-shadow {
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.2),
+    -6px -6px 15px 0 rgba(255, 255, 255, 0.7);
+}
