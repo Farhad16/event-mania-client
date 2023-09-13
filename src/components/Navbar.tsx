@@ -139,8 +139,8 @@ function Navbar() {
                 {page.name}
               </p>
             ))}
-            <button className="ml-24 transition duration-300 ease-in-out outline-none focus:outline-none hover:scale-[1.03] pt-2 pb-3 px-4 !text-md bg-gradient-to-r to-[#e494fc] from-[#72c1ec] rounded-full text-white">
-              Contact Us
+            <button className="ml-24 transition duration-300 ease-in-out outline-none focus:outline-none hover:scale-[1.03] pt-2 pb-3 px-4 !text-md font-semibold bg-gradient-to-r  from-[#4e86f7] to-[#bf10f4] rounded-full text-white">
+              Get Started
             </button>
           </Box>
         </div>

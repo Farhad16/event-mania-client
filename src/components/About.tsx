@@ -17,8 +17,8 @@ function About() {
           fostering connections, <br />
           and creating timeless memories
         </p>
-        <button className="mt-2 text-white transition duration-300 ease-in-out outline-none focus:outline-none hover:scale-[1.03] pt-2 pb-3 px-4 !text-md bg-gradient-to-r to-[#e494fc] from-[#72c1ec] rounded-full font-semibold">
-          Create Event
+        <button className="mt-2 text-white transition duration-300 ease-in-out outline-none focus:outline-none hover:scale-[1.03] pt-2 pb-3 px-6 !text-md bg-gradient-to-r from-[#4e86f7] to-[#bf10f4] rounded-full font-semibold">
+          Join An Event
         </button>
       </Wrapper>
     </div>

@@ -1,7 +1,7 @@
 import React from "react";
-import bannerImg from "../../assets/v2.jpg";
 import "./Banner.css";
 import Wrapper from "../Wrapper";
+
 function Banner() {
   return (
     <Wrapper className="banner flex flex-col items-center text-center justify-center  gap-3">
