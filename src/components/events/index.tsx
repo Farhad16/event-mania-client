@@ -16,7 +16,10 @@ function Events() {
   const eventStatus = ["all", "ongoing", "upcoming"];
 
   return (
-    <Wrapper className="p-12 flex flex-col items-center gap-6 bg-gray-200">
+    <Wrapper
+      className="p-12 py-24 flex flex-col items-center gap-6 bg-gray-200"
+      id="events"
+    >
       <motion.h1
         initial={{ scale: 0.8 }}
         whileInView={{ scale: 1 }}

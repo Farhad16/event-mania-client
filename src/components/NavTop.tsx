@@ -28,6 +28,7 @@ function NavTop() {
 
   return (
     <Wrapper
+      id="home"
       maxWidth="lg"
       className="flex flex-row justify-between items-center bg-slate-100 min-h-[60px] w-full overflow-hidden text-sm"
     >

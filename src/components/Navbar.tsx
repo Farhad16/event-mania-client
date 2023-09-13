@@ -16,7 +16,7 @@ export const pages = [
   { name: "Home", id: "home" },
   { name: "About", id: "about" },
   { name: "Events", id: "events" },
-  { name: "Experience", id: "experience" },
+  { name: "Experiences", id: "experiences" },
 ];
 
 function Navbar() {
