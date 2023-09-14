@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "./layout/Layout";
+import Layout from "./layout";
 import About from "./About";
 import EventTypes from "./eventTypes";
 import Events from "./events";

@@ -2,7 +2,7 @@ import { CircularProgress } from "@mui/material";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import Wrapper from "../Wrapper";
-import Layout from "../layout/Layout";
+import Layout from "../layout";
 import FormInput from "../ui/FormInput";
 import PasswordInput from "../ui/PasswordInput";
 
