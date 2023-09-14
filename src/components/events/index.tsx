@@ -33,10 +33,10 @@ function Events() {
         initial={{ scale: 0.8 }}
         whileInView={{ scale: 1 }}
         transition={{ duration: 0.4, delay: 0.25, ease: "easeOut" }}
-        className="text-cyan-500 font-bold text-2xl sm:text-5xl text-center sm:mb-0 mb-4"
+        className="text-black font-bold text-2xl sm:text-5xl text-center sm:mb-0 mb-4"
       >
         Join the event, be part of <br />
-        something special
+        <span className="text-cyan-500">something special</span>
       </motion.h1>
       <motion.div
         className="search-box bg-slate-200 rounded-full px-6 py-3 flex items-center w-full sm:w-1/2"

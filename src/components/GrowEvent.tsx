@@ -12,8 +12,8 @@ function GrowEvent() {
         transition={{ duration: 0.7, easing: "easeOut", delay: 0.25 }}
         className="flex flex-col gap-6"
       >
-        <h1 className="text-cyan-500 font-bold text-2xl sm:text-5xl">
-          Elevate Your Event Growth
+        <h1 className="text-black font-bold text-2xl sm:text-5xl">
+          Elevate Your Event <span className="text-cyan-500">Growth </span>
         </h1>
         <p className="text-base sm:text-[18px]">
           Discover a comprehensive suite of event management tools and

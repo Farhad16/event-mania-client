@@ -14,10 +14,10 @@ function EventTypes() {
         initial={{ scale: 0.8 }}
         whileInView={{ scale: 1 }}
         transition={{ duration: 0.4, delay: 0.25, ease: "easeOut" }}
-        className="text-cyan-500 font-bold text-2xl sm:text-5xl text-center sm:mb-0 mb-4"
+        className="text-black font-bold text-2xl sm:text-5xl text-center sm:mb-0 mb-4"
       >
-        A scalable event management system built
-        <br /> to support growth
+        A scalable management system built
+        <br /> to <span className="text-cyan-500">support growth</span>
       </motion.h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 sm:gap-24 gap-6">
         <motion.img

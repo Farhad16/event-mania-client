@@ -5,7 +5,8 @@ import Banner from "./banner";
 import EventTypes from "./eventTypes";
 import Events from "./events";
 import GrowEvent from "./GrowEvent";
-import Feedbacks from "./feedback";
+import Experiences from "./experinces";
+import WriteExperience from "./write-experience";
 
 function Home() {
   return (
@@ -15,7 +16,7 @@ function Home() {
       <EventTypes />
       <Events />
       <GrowEvent />
-      <Feedbacks />
+      <Experiences />
     </Layout>
   );
 }
