@@ -1,8 +1,7 @@
-import React, { ReactElement } from "react";
-import Navbar from "../Navbar";
+import AlterFooter from "../AlterFooter";
 import Footer from "../Footer";
 import NavTop from "../NavTop";
-import AlterFooter from "../AlterFooter";
+import Navbar from "../Navbar";
 
 function Layout({ children, showNav = true }: any) {
   return (

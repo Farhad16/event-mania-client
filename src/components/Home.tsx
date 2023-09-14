@@ -6,7 +6,6 @@ import EventTypes from "./eventTypes";
 import Events from "./events";
 import GrowEvent from "./GrowEvent";
 import Experiences from "./experinces";
-import WriteExperience from "./write-experience";
 
 function Home() {
   return (

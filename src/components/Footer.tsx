@@ -1,13 +1,10 @@
-import React from "react";
-import { tw } from "twind";
-import { css } from "twind/css";
-import { Container, Divider } from "@mui/material";
+import CelebrationIcon from "@mui/icons-material/Celebration";
+import EmailIcon from "@mui/icons-material/Email";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import PhoneIcon from "@mui/icons-material/Phone";
-import EmailIcon from "@mui/icons-material/Email";
+import { Divider } from "@mui/material";
 import useScrollSectionById from "../hooks/useScrollById";
 import { pages } from "./Navbar";
-import CelebrationIcon from "@mui/icons-material/Celebration";
 import Wrapper from "./Wrapper";
 
 const Footer = () => {

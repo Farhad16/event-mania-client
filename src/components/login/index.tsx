@@ -1,9 +1,8 @@
-import React from "react";
-import Layout from "../layout/Layout";
+import { CircularProgress } from "@mui/material";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
-import { Rating, CircularProgress } from "@mui/material";
 import Wrapper from "../Wrapper";
+import Layout from "../layout/Layout";
 import FormInput from "../ui/FormInput";
 import PasswordInput from "../ui/PasswordInput";
 

@@ -1,14 +1,13 @@
-import { Container } from "@mui/material";
+import { motion } from "framer-motion";
 import { Autoplay, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/autoplay";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { tw } from "twind";
 import { css } from "twind/css";
+import Wrapper from "../Wrapper";
 import SingleFeedback from "./Feedback";
 import { feedbacks } from "./static.data";
-import { motion } from "framer-motion";
-import Wrapper from "../Wrapper";
 
 const Experiences = () => {
   return (

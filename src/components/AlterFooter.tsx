@@ -1,14 +1,6 @@
-import React from "react";
-import { tw } from "twind";
-import { css } from "twind/css";
-import { Container, Divider } from "@mui/material";
-import LocationOnIcon from "@mui/icons-material/LocationOn";
-import PhoneIcon from "@mui/icons-material/Phone";
-import EmailIcon from "@mui/icons-material/Email";
-import useScrollSectionById from "../hooks/useScrollById";
 import CelebrationIcon from "@mui/icons-material/Celebration";
-import Wrapper from "./Wrapper";
 import { Link } from "react-router-dom";
+import Wrapper from "./Wrapper";
 
 const AlterFooter = () => {
   return (
