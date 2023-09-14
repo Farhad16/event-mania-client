@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
 import Login from "./components/login";
+import Register from "./components/register";
 
 function AppRoutes() {
   // const privateRoutes = [
@@ -20,7 +21,7 @@ function AppRoutes() {
     },
     {
       path: "/register",
-      element: <Home />,
+      element: <Register />,
     },
   ];
 

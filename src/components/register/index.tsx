@@ -7,7 +7,7 @@ import FormInput from "../ui/FormInput";
 import PasswordInput from "../ui/PasswordInput";
 import { Link } from "react-router-dom";
 
-function Login() {
+function Register() {
   const [loading, setLoading] = useState(false);
   const [value, setValue] = useState(3.5);
 
@@ -19,8 +19,10 @@ function Login() {
     formState: { errors },
   } = useForm({
     defaultValues: {
+      name: "",
       email: "",
       password: "",
+      cpassword: "",
     },
   });
 
@@ -42,6 +44,18 @@ function Login() {
           onSubmit={handleSubmit(onSubmit)}
         >
           <FormInput
+            label="Write full name *"
+            rules={{
+              required: { message: "First name is required", value: true },
+            }}
+            error={errors?.name?.message || ""}
+            name="fName"
+            placeholder="Write first name"
+            type="text"
+            control={control}
+          />
+
+          <FormInput
             label="Your email *"
             control={control}
             inputClassName="text-sm py-3"
@@ -55,23 +69,31 @@ function Login() {
               },
             }}
             name="email"
-            placeholder="Write your email email"
+            placeholder="Write your email"
             type="email"
           />
           <PasswordInput
-            label="Your Password *"
+            label="Your password *"
             control={control}
             inputClassName="text-sm py-3 text-black"
             error={errors?.password?.message}
             name="password"
             placeholder="Enter your password"
           />
+          <PasswordInput
+            label="Confirm password *"
+            control={control}
+            inputClassName="text-sm py-3 text-black"
+            error={errors?.cpassword?.message}
+            name="password"
+            placeholder="Confirm your password"
+          />
           <div className="flex justify-between text-[14px] flex-row items-center">
             <Link to="/forgot-password">Forgot password?</Link>
             <p>
-              Don&apos;t have an account?
-              <Link to="/register" className="font-semibold ml-2 underline">
-                Register
+              Already have an account?
+              <Link to="/login" className="font-semibold ml-2 underline">
+                Login
               </Link>
             </p>
           </div>
@@ -94,4 +116,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default Register;
