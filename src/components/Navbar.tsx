@@ -16,6 +16,7 @@ export const pages = [
   { name: "Home", id: "home" },
   { name: "About", id: "about" },
   { name: "Events", id: "events" },
+  { name: "Join", id: "join" },
   { name: "Experiences", id: "experiences" },
 ];
 

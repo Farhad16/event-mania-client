@@ -39,3 +39,19 @@ code {
 .fontt {
   font-family: "Great Vibes", cursive;
 }
+
+.swiper-pagination-bullet {
+  background-color: rgb(194, 195, 196);
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  display: flex;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: crimson;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  display: flex;
+}

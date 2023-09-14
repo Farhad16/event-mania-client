@@ -1,6 +1,7 @@
 import React from "react";
 import "./Banner.css";
 import Wrapper from "../Wrapper";
+import { motion } from "framer-motion";
 
 function Banner() {
   return (
@@ -8,10 +9,15 @@ function Banner() {
       <h3 className="text-[#ffffff] font-bold text-xl sm:text-3xl">
         Welcome to EventMania
       </h3>
-      <h1 className="text-cyan-500 font-bold text-2xl sm:text-5xl">
+      <motion.h1
+        initial={{ scale: 0.8 }}
+        whileInView={{ scale: 1 }}
+        transition={{ duration: 0.4, delay: 0.25, ease: "easeOut" }}
+        className="text-cyan-500 font-bold text-2xl sm:text-5xl"
+      >
         Transform your events into a profitable
         <br /> business or volunteer program.
-      </h1>
+      </motion.h1>
       <p className="text-base sm:text-lg text-gray-100 mt-2 font-medium">
         EventMania attracts millions of people seeking live experiences every
         day,

@@ -6,7 +6,10 @@ import { motion } from "framer-motion";
 
 function EventTypes() {
   return (
-    <Wrapper className="bg-gray-50 flex flex-col items-center justify-between gap-6 sm:gap-12 sm:!px-[100px] py-24 overflow-hidden">
+    <Wrapper
+      id="events"
+      className="bg-gray-50 flex flex-col items-center justify-between gap-6 sm:gap-12 sm:!px-[100px] py-24 overflow-hidden"
+    >
       <motion.h1
         initial={{ scale: 0.8 }}
         whileInView={{ scale: 1 }}
