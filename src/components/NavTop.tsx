@@ -33,7 +33,9 @@ function NavTop() {
       maxWidth="lg"
       className="flex flex-row justify-between items-center bg-slate-100 min-h-[60px] w-full overflow-hidden text-sm"
     >
-      <img src={logo} alt="logo" className="w-15 h-10" />
+      <Link to="/">
+        <img src={logo} alt="logo" className="w-15 h-10" />
+      </Link>
       <div className="sm:flex hidden flex-row items-center gap-4">
         <p className="flex flex-row gap-[2px] items-center">
           <SupportAgentIcon sx={{ fontSize: "16px" }} />
