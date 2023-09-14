@@ -14,7 +14,7 @@ const Footer = () => {
   const { scroll } = useScrollSectionById();
 
   return (
-    <Wrapper className="bg-[#1e0a3c] pt-24 text-white flex flex-col gap-4 sm:gap-8 pb-10">
+    <Wrapper className="bg-[#1e0a3c] text-white flex flex-col gap-4 sm:gap-8 py-10">
       <div className="flex flex-col sm:flex-row justify-between gap-4">
         <div className="flex flex-col">
           <div className="flex flex-row items-center">
@@ -30,7 +30,7 @@ const Footer = () => {
             Turning your visions into reality, event by event.
           </p>
         </div>
-        <div className="flex flex-col gap-3 flex-wrap text-sm">
+        <div className="flex flex-col gap-2 flex-wrap text-sm">
           {pages.map((page: any, idx: any) => (
             <p
               key={page.name}
@@ -43,7 +43,7 @@ const Footer = () => {
             </p>
           ))}
         </div>
-        <div className="flex flex-col gap-3 text-sm">
+        <div className="flex flex-col gap-2 text-sm">
           <div className="flex flex-row gap-3 items-center">
             <LocationOnIcon /> <p>Dhanmondi, Dhaka, Bangladesh</p>
           </div>

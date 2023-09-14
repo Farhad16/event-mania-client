@@ -1,6 +1,6 @@
-import React, { useContext } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
+import Login from "./components/login";
 
 function AppRoutes() {
   // const privateRoutes = [
@@ -12,6 +12,14 @@ function AppRoutes() {
   const publicRoutes = [
     {
       path: "/",
+      element: <Home />,
+    },
+    {
+      path: "/login",
+      element: <Login />,
+    },
+    {
+      path: "/register",
       element: <Home />,
     },
   ];

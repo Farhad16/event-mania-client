@@ -11,6 +11,7 @@ import {
 import logo from "../assets/logo.png";
 import SupportAgentIcon from "@mui/icons-material/SupportAgent";
 import LanguageIcon from "@mui/icons-material/Language";
+import { Link } from "react-router-dom";
 
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
@@ -45,7 +46,7 @@ function NavTop() {
       </div>
       {!user ? (
         <div className="flex flex-row items-center gap-4 font-medium">
-          <p>Login</p>/ <p>Register</p>
+          <Link to="/login">Login</Link>/ <Link to="/register">Register</Link>
         </div>
       ) : (
         <Tooltip title="Open settings">

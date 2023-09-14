@@ -1,9 +1,8 @@
-import { Container } from "@mui/material";
+import { CircularProgress, Rating } from "@mui/material";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
-import FormInput from "./FormInput";
-import { Rating, CircularProgress } from "@mui/material";
 import Wrapper from "../Wrapper";
+import FormInput from "../ui/FormInput";
 
 function WriteExperience() {
   const [loading, setLoading] = useState(false);
