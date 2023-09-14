@@ -1,4 +1,4 @@
-.banner {
+.bannerbg {
   min-height: 450px;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
     url("../../assets/v2.jpg");
@@ -9,7 +9,7 @@
 }
 
 @media (max-width: 768px) {
-  .banner {
+  .bannerbg {
     min-height: 350px;
   }
 }

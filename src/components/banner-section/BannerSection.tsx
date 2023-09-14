@@ -3,9 +3,9 @@ import "./Banner.css";
 import Wrapper from "../Wrapper";
 import { motion } from "framer-motion";
 
-function Banner() {
+function BannerSection() {
   return (
-    <Wrapper className="banner flex flex-col items-center text-center justify-center  gap-3">
+    <Wrapper className="bannerbg flex flex-col items-center text-center justify-center  gap-3">
       <h3 className="text-[#ffffff] font-bold text-xl sm:text-3xl">
         Welcome to EventMania
       </h3>
@@ -28,4 +28,4 @@ function Banner() {
   );
 }
 
-export default Banner;
+export default BannerSection;
