@@ -31,7 +31,7 @@ function NavTop() {
     <Wrapper
       id="home"
       maxWidth="lg"
-      className="flex flex-row justify-between items-center bg-slate-100 min-h-[60px] w-full overflow-hidden text-sm"
+      className="flex flex-row justify-between items-center bg-gray-200 min-h-[60px] w-full overflow-hidden text-sm"
     >
       <Link to="/">
         <img src={logo} alt="logo" className="w-15 h-10" />

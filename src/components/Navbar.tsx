@@ -11,6 +11,7 @@ import React, { useEffect } from "react";
 import { css, tw } from "twind/css";
 import useScrollSectionById from "../hooks/useScrollById";
 import Wrapper from "./Wrapper";
+import CustomeButton from "./ui/CustomButton";
 
 export const pages = [
   { name: "Home", id: "home" },
@@ -131,7 +132,7 @@ function Navbar() {
             {pages.map((page) => (
               <p
                 key={page.name}
-                className="px-4 text-md hover:text-transparent hover:text-md bg-clip-text bg-gradient-to-r from-[#18c8fd] to-purple-600 transition duration-300 ease-in-out cursor-pointer"
+                className="px-4 text-md hover:text-[#18c8fd] transition duration-300 ease-in-out cursor-pointer"
                 onClick={() => {
                   handleCloseNavMenu();
                   scrollSection(page.id);
@@ -140,9 +141,9 @@ function Navbar() {
                 {page.name}
               </p>
             ))}
-            <button className="ml-24 transition duration-300 ease-in-out outline-none focus:outline-none hover:scale-[1.03] pt-2 pb-3 px-4 !text-md font-semibold bg-gradient-to-r  from-[#4e86f7] to-[#bf10f4] rounded-full text-white">
+            <CustomeButton className="ml-24" disableHover={true}>
               Get Started
-            </button>
+            </CustomeButton>
           </Box>
         </div>
       </Wrapper>

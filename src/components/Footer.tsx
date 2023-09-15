@@ -34,7 +34,7 @@ const Footer = () => {
               onClick={() => {
                 scroll(page.id);
               }}
-              className="cursor-pointer"
+              className="hover:text-[#18c8fd] transition duration-300 ease-in-out cursor-pointer"
             >
               {page.name}
             </p>

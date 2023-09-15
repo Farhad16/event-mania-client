@@ -3,6 +3,7 @@ import Wrapper from "../Wrapper";
 import { eventCategory } from "./static.data";
 import eventT from "../../assets/eventT.png";
 import { motion } from "framer-motion";
+import CustomeButton from "../ui/CustomButton";
 
 function EventTypes() {
   return (
@@ -43,17 +44,7 @@ function EventTypes() {
           ))}
         </div>
       </div>
-      <motion.button
-        initial={{ scale: 0.8 }}
-        whileInView={{ scale: 1 }}
-        whileHover={{ scale: 1.1 }}
-        transition={{
-          duration: 0.3,
-        }}
-        className="mt-2 text-white transition duration-300 ease-in-out outline-none focus:outline-none pt-2 pb-3 px-6 !text-md bg-gradient-to-r from-[#4e86f7] to-[#bf10f4] rounded-full font-semibold"
-      >
-        Create Your Event
-      </motion.button>
+      <CustomeButton>Create Your Event</CustomeButton>
     </Wrapper>
   );
 }

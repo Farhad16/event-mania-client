@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 function GrowEvent() {
   return (
-    <Wrapper className="bg-[#ebf8f8] grid grid-cols-1 sm:grid-cols-2 py-24 gap-4 sm:gap-8">
+    <Wrapper className="bg-gray-50 grid grid-cols-1 sm:grid-cols-2 py-24 gap-4 sm:gap-8">
       <motion.div
         initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}

@@ -1,11 +1,12 @@
 import React from "react";
 import Wrapper from "./Wrapper";
 import { motion } from "framer-motion";
+import CustomeButton from "./ui/CustomButton";
 
 function About() {
   return (
     <Wrapper
-      className="flex flex-col items-center text-center gap-3 bg-slate-100 py-24"
+      className="flex flex-col items-center text-center gap-3 bg-gray-200 py-24"
       id="about"
     >
       <h3 className="text-cyan-500 font-bold text-xl sm:text-3xl">
@@ -25,14 +26,7 @@ function About() {
         fostering connections, <br />
         and creating timeless memories
       </p>
-      <motion.button
-        initial={{ opacity: 0, x: -100 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.2 }}
-        className="mt-2 text-white transition duration-300 ease-in-out outline-none focus:outline-none hover:scale-[1.03] pt-2 pb-3 px-6 !text-md bg-gradient-to-r from-[#4e86f7] to-[#bf10f4] rounded-full font-semibold"
-      >
-        Join An Event
-      </motion.button>
+      <CustomeButton>Join An Event</CustomeButton>
     </Wrapper>
   );
 }

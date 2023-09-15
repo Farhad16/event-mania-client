@@ -6,6 +6,7 @@ import Layout from "../layout";
 import FormInput from "../ui/FormInput";
 import PasswordInput from "../ui/PasswordInput";
 import { Link } from "react-router-dom";
+import CustomButton from "../ui/CustomButton";
 
 function Register() {
   const [loading, setLoading] = useState(false);
@@ -98,8 +99,8 @@ function Register() {
             </p>
           </div>
           <div className="text-center">
-            <button
-              className="mt-2 text-white transition duration-300 ease-in-out outline-none focus:outline-none hover:scale-[1.03] pt-2 pb-3 px-6 !text-md bg-gradient-to-r from-[#4e86f7] to-[#bf10f4] rounded-lg font-semibold"
+            <CustomButton
+              className="rounded-lg"
               type="submit"
               disabled={loading}
             >
@@ -108,7 +109,7 @@ function Register() {
               ) : (
                 "Submit"
               )}
-            </button>
+            </CustomButton>
           </div>
         </form>
       </Wrapper>

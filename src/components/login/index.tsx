@@ -6,6 +6,7 @@ import Layout from "../layout";
 import FormInput from "../ui/FormInput";
 import PasswordInput from "../ui/PasswordInput";
 import { Link } from "react-router-dom";
+import CustomeButton from "../ui/CustomButton";
 
 function Login() {
   const [loading, setLoading] = useState(false);
@@ -76,8 +77,8 @@ function Login() {
             </p>
           </div>
           <div className="text-center">
-            <button
-              className="mt-2 text-white transition duration-300 ease-in-out outline-none focus:outline-none hover:scale-[1.03] pt-2 pb-3 px-6 !text-md bg-gradient-to-r from-[#4e86f7] to-[#bf10f4] rounded-lg font-semibold"
+            <CustomeButton
+              className="rounded-lg"
               type="submit"
               disabled={loading}
             >
@@ -86,7 +87,7 @@ function Login() {
               ) : (
                 "Submit"
               )}
-            </button>
+            </CustomeButton>
           </div>
         </form>
       </Wrapper>

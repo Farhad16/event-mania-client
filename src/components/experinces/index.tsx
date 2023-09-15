@@ -11,7 +11,10 @@ import { feedbacks } from "./static.data";
 
 const Experiences = () => {
   return (
-    <Wrapper className="flex flex-col gap-6 sm:gap-12 py-24" id="experiences">
+    <Wrapper
+      className="flex flex-col gap-6 sm:gap-12 py-24 bg-gray-200"
+      id="experiences"
+    >
       <motion.h2
         initial={{ scale: 0.8 }}
         whileInView={{ scale: 1 }}
