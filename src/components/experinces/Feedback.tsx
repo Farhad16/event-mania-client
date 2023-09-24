@@ -33,11 +33,11 @@ const SingleFeedback = ({
       </div>
       <div className="flex flex-row gap-7 text-sm">
         <span>Event:</span>
-        <p className="text-green-500 font-medium">{event}</p>
+        <p>{event}</p>
       </div>
       <div className="flex flex-row text-sm gap-[2px]">
-        <span>Organizer: </span>
-        <p className="text-green-500 font-medium">{organizer}</p>
+        <span>Organizer:</span>
+        <p>{organizer}</p>
       </div>
 
       <p className="text-sm">{comment}</p>

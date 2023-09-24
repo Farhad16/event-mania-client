@@ -10,7 +10,7 @@ import {
 } from "@mui/material";
 import logo from "../assets/logo.png";
 import SupportAgentIcon from "@mui/icons-material/SupportAgent";
-import LanguageIcon from "@mui/icons-material/Language";
+import HomeIcon from "@mui/icons-material/Home";
 import { Link } from "react-router-dom";
 
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
@@ -37,13 +37,15 @@ function NavTop() {
         <img src={logo} alt="logo" className="w-15 h-10" />
       </Link>
       <div className="sm:flex hidden flex-row items-center gap-4">
+        <Link to="/">
+          <p className="flex flex-row gap-[2px] items-center">
+            <HomeIcon sx={{ fontSize: "16px" }} />
+            <span>Home</span>
+          </p>
+        </Link>
         <p className="flex flex-row gap-[2px] items-center">
           <SupportAgentIcon sx={{ fontSize: "16px" }} />
           <span>Support</span>
-        </p>
-        <p className="flex flex-row gap-[2px] items-center">
-          <LanguageIcon sx={{ fontSize: "16px" }} />
-          <span>Languages</span>
         </p>
       </div>
       {!user ? (

@@ -21,7 +21,7 @@ const Experiences = () => {
         transition={{ duration: 0.4, delay: 0.25, ease: "easeOut" }}
         className="text-black font-bold text-2xl sm:text-5xl text-center sm:mb-0 mb-4"
       >
-        Participant's <span className="text-cyan-500">Experiences</span>
+        Participant's <span className="text-green-500">Experiences</span>
       </motion.h2>
       <div>
         <Swiper

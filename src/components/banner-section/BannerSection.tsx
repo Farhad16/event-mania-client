@@ -13,7 +13,7 @@ function BannerSection() {
         initial={{ scale: 0.8 }}
         whileInView={{ scale: 1 }}
         transition={{ duration: 0.4, delay: 0.25, ease: "easeOut" }}
-        className="text-cyan-500 font-bold text-2xl sm:text-5xl"
+        className="text-green-500 font-bold text-2xl sm:text-5xl"
       >
         Transform your events into a profitable
         <br /> business or volunteer program.

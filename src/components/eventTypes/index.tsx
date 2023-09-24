@@ -3,7 +3,7 @@ import Wrapper from "../Wrapper";
 import { eventCategory } from "./static.data";
 import eventT from "../../assets/eventT.png";
 import { motion } from "framer-motion";
-import CustomeButton from "../ui/CustomButton";
+import CustomButton from "../ui/CustomButton";
 
 function EventTypes() {
   return (
@@ -18,7 +18,7 @@ function EventTypes() {
         className="text-black font-bold text-2xl sm:text-5xl text-center sm:mb-0 mb-4"
       >
         A scalable management system built
-        <br /> to <span className="text-cyan-500">support growth</span>
+        <br /> to <span className="text-green-500">support growth</span>
       </motion.h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 sm:gap-24 gap-6">
         <motion.img
@@ -44,7 +44,7 @@ function EventTypes() {
           ))}
         </div>
       </div>
-      <CustomeButton>Create Your Event</CustomeButton>
+      <CustomButton>Create Your Event</CustomButton>
     </Wrapper>
   );
 }

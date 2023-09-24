@@ -13,7 +13,7 @@ function GrowEvent() {
         className="flex flex-col gap-6"
       >
         <h1 className="text-black font-bold text-2xl sm:text-5xl">
-          Elevate Your Event <span className="text-cyan-500">Growth </span>
+          Elevate Your Event <span className="text-green-500">Growth </span>
         </h1>
         <p className="text-base sm:text-[18px]">
           Discover a comprehensive suite of event management tools and

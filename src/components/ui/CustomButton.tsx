@@ -9,7 +9,7 @@ type buttonProps = {
   disableHover?: boolean;
 };
 
-function CustomeButton({
+function CustomButton({
   className,
   children,
   onClick,
@@ -31,4 +31,4 @@ function CustomeButton({
   );
 }
 
-export default CustomeButton;
+export default CustomButton;

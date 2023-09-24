@@ -4,7 +4,7 @@ import { useForm, Controller } from "react-hook-form";
 import SearchIcon from "@mui/icons-material/Search";
 import { motion } from "framer-motion";
 import "./Event.css";
-import { events } from "../eventTypes/static.data";
+import { events } from "./static.data";
 import Event from "./Event";
 
 function Events() {
@@ -36,7 +36,7 @@ function Events() {
         className="text-black font-bold text-2xl sm:text-5xl text-center sm:mb-0 mb-4"
       >
         Join the event, be part of <br />
-        <span className="text-cyan-500">something special</span>
+        <span className="text-green-500">something special</span>
       </motion.h1>
       <motion.div
         className="search-box bg-slate-200 rounded-full px-6 py-3 flex items-center w-full sm:w-1/2"
@@ -76,7 +76,7 @@ function Events() {
       >
         {eventStatus.map((name) => (
           <motion.div
-            className={`text-center px-4 py-2 bg-slate-200 rounded-full cursor-pointer capitalize ${
+            className={`text-center px-4 py-2 rounded-full cursor-pointer capitalize ${
               name === status && "!bg-[#a7c6c7]"
             }`}
             whileHover={{
@@ -91,9 +91,9 @@ function Events() {
           </motion.div>
         ))}
       </motion.div>
-      <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
-        {allEvents.map((e, i) => (
-          <Event {...e} key={i} />
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
+        {allEvents.map((e) => (
+          <Event {...e} key={e.id} />
         ))}
       </div>
     </Wrapper>

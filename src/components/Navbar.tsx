@@ -11,7 +11,7 @@ import React, { useEffect } from "react";
 import { css, tw } from "twind/css";
 import useScrollSectionById from "../hooks/useScrollById";
 import Wrapper from "./Wrapper";
-import CustomeButton from "./ui/CustomButton";
+import CustomButton from "./ui/CustomButton";
 
 export const pages = [
   { name: "Home", id: "home" },
@@ -141,9 +141,9 @@ function Navbar() {
                 {page.name}
               </p>
             ))}
-            <CustomeButton className="ml-24" disableHover={true}>
+            <CustomButton className="ml-24" disableHover={true}>
               Get Started
-            </CustomeButton>
+            </CustomButton>
           </Box>
         </div>
       </Wrapper>
